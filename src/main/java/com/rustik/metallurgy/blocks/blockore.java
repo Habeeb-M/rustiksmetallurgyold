@@ -14,7 +14,7 @@ public class blockore extends Block {
         super( Material.ROCK);
         setHardness ( 2F );
         setTranslationKey( metallurgy.MODID + ".blockore");
-        setRegistryName("blockore");
+        setRegistryName(metallurgy.MODID, "blockore");
     }
 
     @SideOnly(Side.CLIENT)
