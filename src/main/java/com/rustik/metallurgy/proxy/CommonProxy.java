@@ -30,7 +30,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock ( ModBlocks.blockore).setRegistryName(ModBlocks.blockore.getRegistryName()));
+        event.getRegistry().register(new ItemBlock ( ModBlocks.blockOre).setRegistryName(ModBlocks.blockOre.getRegistryName()));
     }
 }
 

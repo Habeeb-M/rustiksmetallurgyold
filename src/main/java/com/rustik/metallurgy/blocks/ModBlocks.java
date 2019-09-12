@@ -4,5 +4,5 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
     @GameRegistry.ObjectHolder("metallurgy:blockore")
-    public static blockore blockore;
+    public static final blockore blockOre = null;
 }
