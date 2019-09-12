@@ -3,6 +3,6 @@ package com.rustik.metallurgy.blocks;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
-    @GameRegistry.ObjectHolder("metallurgy:blockore")
+    @GameRegistry.ObjectHolder("blockore")
     public static final blockore blockOre = null;
 }

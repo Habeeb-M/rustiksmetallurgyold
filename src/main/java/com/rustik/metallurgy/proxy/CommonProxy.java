@@ -2,6 +2,7 @@ package com.rustik.metallurgy.proxy;
 
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.blockore;
+import com.rustik.metallurgy.metallurgy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -12,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(modid = metallurgy.MODID)
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
     }
@@ -26,6 +27,7 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new blockore ());
+
     }
 
     @SubscribeEvent
