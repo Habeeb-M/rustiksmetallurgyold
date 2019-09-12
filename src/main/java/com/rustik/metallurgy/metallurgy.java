@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = metallurgy.MODID, name = metallurgy.MODNAME, version = metallurgy.MODVERSION, dependencies = "required-after:forge@[11.16.0.1865,)", useMetadata = true)
 public class metallurgy {
 
-    public static final String MODID = "rustiksmetallurgy";
+    public static final String MODID = "metallurgy";
     public static final String MODNAME = "Rustik's Metallurgy";
     public static final String MODVERSION= "0.0.1";
 
