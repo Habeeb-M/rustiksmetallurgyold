@@ -9,12 +9,12 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class blockore extends Block {
-    public blockore() {
+public class BlockOre extends Block {
+    public BlockOre () {
         super( Material.ROCK);
         setHardness ( 2F );
-        setTranslationKey( metallurgy.MODID + ".blockore");
-        setRegistryName(metallurgy.MODID, "blockore");
+        setTranslationKey( metallurgy.MODID + ".BlockOre");
+        setRegistryName(metallurgy.MODID, "BlockOre");
     }
 
     @SideOnly(Side.CLIENT)
