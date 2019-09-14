@@ -26,6 +26,7 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels (ModelRegistryEvent event) {
+
         ModItems.initModels ();
         ModelLoader.setCustomModelResourceLocation ( Item.getItemFromBlock ( ModBlocks.blockOre ) , 0 , new ModelResourceLocation ( ModBlocks.itemBlockOre.getRegistryName () , "inventory" ) );
     }
@@ -40,17 +41,17 @@ public class ClientProxy extends CommonProxy {
                     @Override
                     public int colorMultiplier (ItemStack stack , int tintIndex) {
                         if ( stack != ItemStack.EMPTY ) {
-                            switch (stack.getMetadata ()) {
-                                case 0:	return	0xcafbf6;
-                                case 1:	return	0xf4f4f4;
-                                case 2:	return	0xf5f7c5;
-                                case 3:	return	0xa5a5a5;
-                                case 4:	return	0xe0a532;
-                                case 5:	return	0x274828;
-                                case 6:	return	0x323232;
-                                case 7:	return	0x5d5d5d;
-                                case 8:	return	0x343434;
-                                case 9:	return	0xe2dfb7;
+                            switch (stack.getItem (i)) {
+                                case 0:	return 0xcafbf6;
+                                case 1:	return 0xf4f4f4;
+                                case 2:	return 0xf5f7c5;
+                                case 3:	return 0xa5a5a5;
+                                case 4:	return 0xe0a532;
+                                case 5:	return 0x274828;
+                                case 6:	return 0x323232;
+                                case 7:	return 0x5d5d5d;
+                                case 8:	return 0x343434;
+                                case 9:	return 0xe2dfb7;
                                 case 10: return	0x383838;
                                 case 11: return	0x9e9e9e;
                                 case 12: return	0x545454;
