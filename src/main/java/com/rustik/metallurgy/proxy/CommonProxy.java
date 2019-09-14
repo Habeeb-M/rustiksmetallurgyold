@@ -4,8 +4,9 @@ import com.rustik.metallurgy.MaterialIngot.MaterialIngot;
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
 import com.rustik.metallurgy.items.ItemIngot;
+import com.rustik.metallurgy.metallurgy;
+import javafx.scene.paint.Material;
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
@@ -38,10 +39,12 @@ public class CommonProxy {
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemIngot ());
         event.getRegistry().register(new ItemBlock(ModBlocks.blockOre).setRegistryName(ModBlocks.blockOre.getRegistryName()));
-        for(int i = 0; i < 100; i++) {
-            Item ingot = new MaterialIngot (i).setRegistryName("materialingot" + i);
+        for(int i = 1; i < 89; i++) {
+            Item ingot = new MaterialIngot (i).setRegistryName("materialingot" + i).setTranslationKey( metallurgy.MODID + ".materialingot" + i);
+
             ingots.add(ingot);
             event.getRegistry().register(ingot);
+
         }
     }
 

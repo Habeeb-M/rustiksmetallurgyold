@@ -4,6 +4,6 @@
   "name": "Rustik's Metallurgy",
   "description": "A mod based on real life metallurgy",
   "version": "${version}",
-  "mcversion": "${mcversion}",
+  "mcversion": "${mcversion}"
 }
 ]

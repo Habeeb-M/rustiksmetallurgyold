@@ -1,6 +1,5 @@
 package com.rustik.metallurgy.MaterialIngot;
 
-import com.rustik.metallurgy.metallurgy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -11,22 +10,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.HashSet;
 import java.util.Set;
 
+import static net.minecraftforge.client.model.ModelLoader.setCustomModelResourceLocation;
+
 public class MaterialIngot extends Item {
 
     public static Set<Item> ingots = new HashSet<> ();
 
-    public int i = 0;
+    public int i = 1;
     public MaterialIngot (int i) {
         this.i = i;
     }
 
-    public MaterialIngot() {
-        setTranslationKey ( metallurgy.MODID + ".materialIngot" + i);
-    }
-
     @SideOnly(Side.CLIENT)
     public void initModel () {
-        ModelLoader.setCustomModelResourceLocation ( this , 0 , new ModelResourceLocation ( getRegistryName () , "inventory" ) );
+        setCustomModelResourceLocation(this, 0, new ModelResourceLocation ("metallurgy:models/item/materialingot", "inventory"));
     }
 
     @GameRegistry.ObjectHolder("metallurgy:materialingot")
