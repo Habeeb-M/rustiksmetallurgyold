@@ -3,14 +3,12 @@ package com.rustik.metallurgy.MaterialIngot;
 import com.rustik.metallurgy.metallurgy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class MaterialIngot extends Item {
@@ -19,10 +17,10 @@ public class MaterialIngot extends Item {
 
     public int i = 0;
     public MaterialIngot (int i) {
+        this.i = i;
     }
 
     public MaterialIngot() {
-        setRegistryName ( metallurgy.MODID, "itemIngot" );
         setTranslationKey ( metallurgy.MODID + ".materialIngot" + i);
     }
 

@@ -6,7 +6,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems{
 
-    @GameRegistry.ObjectHolder("metallurgy:ItemIngot")
+    @GameRegistry.ObjectHolder("metallurgy:itemingot")
     public static ItemIngot itemIngot;
 
     @SideOnly(Side.CLIENT)

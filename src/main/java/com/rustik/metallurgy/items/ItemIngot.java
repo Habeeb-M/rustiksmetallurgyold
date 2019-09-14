@@ -9,7 +9,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemIngot extends Item {
     public ItemIngot () {
-        setRegistryName ( metallurgy.MODID, "itemIngot");
+        setRegistryName ( metallurgy.MODID, "itemingot");
         setTranslationKey ( metallurgy.MODID + ".itemIngot" );
     }
     @SideOnly(Side.CLIENT)
