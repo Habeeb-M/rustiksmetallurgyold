@@ -1,5 +1,6 @@
 package com.rustik.metallurgy.proxy;
 
+import com.rustik.metallurgy.MaterialIngot.MaterialIngot;
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.items.ModItems;
 import net.minecraft.client.Minecraft;
@@ -29,19 +30,17 @@ public class ClientProxy extends CommonProxy {
 
         ModItems.initModels ();
         ModelLoader.setCustomModelResourceLocation ( Item.getItemFromBlock ( ModBlocks.blockOre ) , 0 , new ModelResourceLocation ( ModBlocks.itemBlockOre.getRegistryName () , "inventory" ) );
+
     }
 
-    ItemColors ic = Minecraft.getMinecraft ().getItemColors ();
-
-
-    public void registerColors ( ) {
+    public static void registerColors ( ) {
         ItemColors ic = Minecraft.getMinecraft ().getItemColors ();
         ic.registerItemColorHandler (
                 new IItemColor () {
                     @Override
                     public int colorMultiplier (ItemStack stack , int tintIndex) {
                         if ( stack != ItemStack.EMPTY ) {
-                            switch (stack.getItem (i)) {
+                            switch (((MaterialIngot)stack.getItem()).i) {
                                 case 0:	return 0xcafbf6;
                                 case 1:	return 0xf4f4f4;
                                 case 2:	return 0xf5f7c5;

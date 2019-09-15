@@ -26,6 +26,7 @@ public class CommonProxy {
     }
 
     public static void init (FMLInitializationEvent event) {
+        ClientProxy.registerColors();
     }
 
     public static void postInit (FMLPostInitializationEvent event) {
@@ -47,7 +48,6 @@ public class CommonProxy {
 
         }
     }
-
 }
 
 
