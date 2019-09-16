@@ -40,7 +40,7 @@ public class CommonProxy {
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemIngot ());
         event.getRegistry().register(new ItemBlock(ModBlocks.blockOre).setRegistryName(ModBlocks.blockOre.getRegistryName()));
-        for(int i = 1; i < 89; i++) {
+        for(int i = 0; i < 84; i++) {
             Item ingot = new MaterialIngot (i).setRegistryName("materialingot" + i).setTranslationKey( metallurgy.MODID + ".materialingot" + i);
 
             ingots.add(ingot);

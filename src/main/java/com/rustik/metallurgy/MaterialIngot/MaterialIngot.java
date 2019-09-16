@@ -16,7 +16,7 @@ public class MaterialIngot extends Item {
 
     public static Set<Item> ingots = new HashSet<> ();
 
-    public int i = 1;
+    public int i = 0;
 
     public MaterialIngot (int i) {
         this.i = i;
