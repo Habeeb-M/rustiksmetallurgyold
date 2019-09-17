@@ -1,6 +1,5 @@
-package com.rustik.metallurgy.MaterialIngot;
+package com.rustik.metallurgy.MaterialSystem;
 
-import javafx.scene.paint.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;

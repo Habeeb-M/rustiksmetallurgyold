@@ -1,11 +1,10 @@
 package com.rustik.metallurgy.proxy;
 
-import com.rustik.metallurgy.MaterialIngot.MaterialIngot;
+import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
 import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.metallurgy;
-import javafx.scene.paint.Material;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -16,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import static com.rustik.metallurgy.MaterialIngot.MaterialIngot.ingots;
+import static com.rustik.metallurgy.MaterialSystem.MaterialIngot.ingots;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
