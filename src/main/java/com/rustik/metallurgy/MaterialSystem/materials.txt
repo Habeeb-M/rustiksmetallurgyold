@@ -1,4 +1,3 @@
-/*name(symbol, colour) */
 actinium    ("Ac", 0xcafbf6),
 aluminum    ("Al", 0xf4f4f4),
 americium   ("Am", 0xf5f7c5),
@@ -20,7 +19,6 @@ cobalt      ("Co", 0xc5caff),
 copper      ("Cu", 0xff7b00),
 curium      ("Cm", 0x8d8a79),
 dysprosium  ("Dy", 0xf8f8f8),
-einsteinium ("Es", 0xc2fff5),
 erbium      ("Er", 0xececec),
 europium    ("Eu", 0xa1a1a1),
 gadolinium  ("Gd", 0x96bd94),
@@ -100,6 +98,7 @@ zirconium   ("Zr", 0xf0edd8);
 //chlorine("Cl", 0x),
 //argon("Ar", 0x),
 
+
 //tennesine("Ts", 0x),
 //roentgenium("Rg", 0x),
 //livermorium("Lv", 0x),
@@ -120,3 +119,4 @@ zirconium   ("Zr", 0xf0edd8);
 //meitnerium("Mt", 0x),
 //nihonium("Nh", 0x),
 //moscovium("Mc", 0x),
+//einsteinium

@@ -1,9 +1,12 @@
 package com.rustik.metallurgy.proxy;
 
 import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
+import com.rustik.metallurgy.MaterialSystem.MaterialOreCrushed;
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
+import com.rustik.metallurgy.fluids.BlockFluidMolten;
 import com.rustik.metallurgy.items.ItemIngot;
+import com.rustik.metallurgy.fluids.FluidMolten;
 import com.rustik.metallurgy.metallurgy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -22,10 +25,11 @@ public class CommonProxy {
 
 
     public void preInit(FMLPreInitializationEvent e) {
+        FluidMolten.registerFluids();
     }
 
     public static void init (FMLInitializationEvent event) {
-        ClientProxy.registerColors();
+        MaterialIngot.registerColors();
     }
 
     public static void postInit (FMLPostInitializationEvent event) {
@@ -34,16 +38,22 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BlockOre ());
+        event.getRegistry().register(new BlockFluidMolten());
     }
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemIngot ());
         event.getRegistry().register(new ItemBlock(ModBlocks.blockOre).setRegistryName(ModBlocks.blockOre.getRegistryName()));
-        for(int i = 0; i < 84; i++) {
-            Item ingot = new MaterialIngot (i).setRegistryName("materialingot" + i).setTranslationKey( metallurgy.MODID + ".materialingot" + i);
 
+        for(int ingotamount = 0; ingotamount < 82; ingotamount++) {
+            Item ingot = new MaterialIngot (ingotamount).setRegistryName("materialingot" + ingotamount).setTranslationKey( metallurgy.MODID + ".materialingot" + ingotamount);
             ingots.add(ingot);
-            event.getRegistry().register(ingot);
+            event.getRegistry().register(ingot);}
+
+        for(int orecrushedamount = 0; orecrushedamount < 100; orecrushedamount++) {
+            Item orecrushed = new MaterialOreCrushed(orecrushedamount).setRegistryName("materialorecrushed" + orecrushedamount).setTranslationKey(metallurgy.MODID + ".materialorecrushed" + orecrushedamount);
+            MaterialOreCrushed.orecrushed.add(orecrushed);
+            event.getRegistry().register(orecrushed);
 
         }
     }
