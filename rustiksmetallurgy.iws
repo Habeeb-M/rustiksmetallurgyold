@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b6d1f2d-3d06-4535-977c-8fd2093feaec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialOreCrushed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/ores.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/BlockFluidMolten.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidMolten.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/fluidmolten.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/basalt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/basaltore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/gabbro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/gabbroore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/komatiite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/komatiiteore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/limestone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/limestoneore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/peridotite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/peridotiteore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/fluidmolten_flow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/fluidmolten_flow.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/fluidmolten_still.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/fluidmolten_still.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/items/materialorecrushed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rustiksmetallurgy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rustiksmetallurgy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rustiksmetallurgy.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/rustiksmetallurgy.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rustiksmetallurgy.iws" beforeDir="false" afterPath="$PROJECT_DIR$/rustiksmetallurgy.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialIngot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialIngot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/materials.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/materials.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/lang/en_US.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/blockore.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/blockore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/fluidmolten_flow.png.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/fluidmolten_flow.png.mcmeta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
