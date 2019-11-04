@@ -1,10 +1,9 @@
 package com.rustik.metallurgy.proxy;
 
 import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
-import com.rustik.metallurgy.MaterialSystem.MaterialOreCrushed;
+//import com.rustik.metallurgy.MaterialSystem.MaterialOreCrushed;//
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
-import com.rustik.metallurgy.fluids.BlockFluidMolten;
 import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.fluids.FluidMolten;
 import com.rustik.metallurgy.metallurgy;
@@ -38,7 +37,6 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BlockOre ());
-        event.getRegistry().register(new BlockFluidMolten());
     }
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
@@ -50,12 +48,12 @@ public class CommonProxy {
             ingots.add(ingot);
             event.getRegistry().register(ingot);}
 
-        for(int orecrushedamount = 0; orecrushedamount < 100; orecrushedamount++) {
+        /*for(int orecrushedamount = 0; orecrushedamount < 100; orecrushedamount++) {
             Item orecrushed = new MaterialOreCrushed(orecrushedamount).setRegistryName("materialorecrushed" + orecrushedamount).setTranslationKey(metallurgy.MODID + ".materialorecrushed" + orecrushedamount);
             MaterialOreCrushed.orecrushed.add(orecrushed);
             event.getRegistry().register(orecrushed);
 
-        }
+        }*/
     }
 }
 

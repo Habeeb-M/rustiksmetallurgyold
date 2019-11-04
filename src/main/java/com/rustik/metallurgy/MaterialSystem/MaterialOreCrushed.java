@@ -1,4 +1,4 @@
-package com.rustik.metallurgy.MaterialSystem;
+/*package com.rustik.metallurgy.MaterialSystem;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -50,4 +50,4 @@ public class MaterialOreCrushed extends Item {
                 } ,
                 orecrushed.toArray ( new Item[0] ) );
     }
-}
+}*/
