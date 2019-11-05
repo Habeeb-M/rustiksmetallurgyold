@@ -10,6 +10,7 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 
 public class ModFluid extends Fluid{
+
     protected static int mapColor = 0xFFFF0000;
     protected static float overlayAlpha = 0.2F;
     protected static SoundEvent emptySound = SoundEvents.ITEM_BUCKET_EMPTY;
@@ -101,6 +102,5 @@ public class ModFluid extends Fluid{
         return block.getDefaultState().getMaterial() == getMaterial();
     }
 
-    public static final Material FLUIDMOLTEN = new MaterialLiquid(
-            MapColor.RED);
+
 }

@@ -1,14 +1,22 @@
 package com.rustik.metallurgy.fluids;
 
 import com.rustik.metallurgy.metallurgy;
+import net.minecraft.block.material.MapColor;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialLiquid;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 
 import java.awt.*;
 
-import static com.rustik.metallurgy.fluids.ModFluid.FLUIDMOLTEN;
+public class FluidMolten extends Fluid{
 
-public class FluidMolten extends Fluid {
+    public FluidMolten(String fluidName, ResourceLocation still, ResourceLocation flowing, Color color) {
+        super(fluidName, still, flowing, color);
+    }
+
+    public static final Material FLUIDMOLTEN = new MaterialLiquid(
+            MapColor.RED);
     public static final ModFluid FluidMolten = (ModFluid) new ModFluid(
             "FluidMolten",
             new ResourceLocation(metallurgy.MODID,"fluid/fluidmolten_still"),
@@ -23,8 +31,18 @@ public class FluidMolten extends Fluid {
 
     public static FluidMolten fluidMolten;
 
+
+
     public static void registerFluids() {
-        fluidMolten = new FluidMolten();
+        fluidMolten = new FluidMolten(
+                "fluidMolten",
+                (new ResourceLocation("metallurgy", "fluids/fluidmolten_still")),
+        (new ResourceLocation("metallurgy", "fluids/fluids/fluidmolten/flow")),
+                Color.RED);
     }
+
+
+
+
 }
 
