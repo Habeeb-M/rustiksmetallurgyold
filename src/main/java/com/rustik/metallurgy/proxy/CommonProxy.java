@@ -26,7 +26,8 @@ public class CommonProxy {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-        ModFluids.registerFluids();
+        ModFluids.registerFluids(FluidMolten, Material.LAVA);
+        ModFluids.createFluid("MoltenFluid");
     }
 
     public static void init (FMLInitializationEvent event) {
