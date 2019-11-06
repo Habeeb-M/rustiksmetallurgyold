@@ -1,18 +1,18 @@
 package com.rustik.metallurgy.proxy;
 
 import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
-//import com.rustik.metallurgy.MaterialSystem.MaterialOreCrushed;//
+//import com.rustik.metallurgy.MaterialSystem.MaterialOreCrushed;
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
-import com.rustik.metallurgy.fluids.FluidInit;
-import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.fluids.FluidMolten;
+import com.rustik.metallurgy.fluids.ModFluids;
+import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.metallurgy;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -24,9 +24,9 @@ import static com.rustik.metallurgy.MaterialSystem.MaterialIngot.ingots;
 @Mod.EventBusSubscriber
 public class CommonProxy {
 
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-        FluidMolten.registerFluids();
-        FluidInit.Init();
+        ModFluids.registerFluids();
     }
 
     public static void init (FMLInitializationEvent event) {

@@ -5,10 +5,7 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
-
-import java.awt.*;
 
 public class ModFluid extends Fluid{
 
@@ -18,7 +15,7 @@ public class ModFluid extends Fluid{
     protected static SoundEvent fillSound = SoundEvents.ITEM_BUCKET_FILL;
     protected static Material material = Material.WATER;
 
-    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing, Color color)
+    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing)
     {
         super(fluidName, still, flowing);
     }
@@ -90,10 +87,4 @@ public class ModFluid extends Fluid{
             return false;
         return block.getDefaultState().getMaterial() == getMaterial();
     }
-
-    static {
-        FluidRegistry.enableUniversalBucket();
-    }
-
-
 }

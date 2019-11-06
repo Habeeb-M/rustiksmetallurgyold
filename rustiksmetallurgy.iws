@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b6d1f2d-3d06-4535-977c-8fd2093feaec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluids.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rustiksmetallurgy.iws" beforeDir="false" afterPath="$PROJECT_DIR$/rustiksmetallurgy.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidMolten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidMolten.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
