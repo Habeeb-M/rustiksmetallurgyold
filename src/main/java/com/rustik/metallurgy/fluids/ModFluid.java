@@ -94,4 +94,11 @@ public class ModFluid extends Fluid{
     static {
         FluidRegistry.enableUniversalBucket();
     }
+
+    public static Fluid MoltenFluid;
+    public static void Init() {
+        MoltenFluid = new FluidMolten("moltenfluid", (new ResourceLocation("metallurgy", "fluids/fluidmolten_still")),
+                (new ResourceLocation("metallurgy", "fluids/fluids/fluidmolten/flow")),
+                Color.RED);
+    }
 }

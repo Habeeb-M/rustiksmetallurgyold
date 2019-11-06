@@ -1,5 +1,6 @@
 package com.rustik.metallurgy;
 
+import com.rustik.metallurgy.fluids.ModFluid;
 import com.rustik.metallurgy.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -27,6 +28,7 @@ public class metallurgy {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event);
+        ModFluid.Init();
     }
 
     @Mod.EventHandler
