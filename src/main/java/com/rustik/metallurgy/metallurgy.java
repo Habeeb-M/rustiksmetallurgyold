@@ -16,6 +16,10 @@ public class metallurgy {
     public static final String MODNAME = "Rustik's Metallurgy";
     public static final String MODVERSION= "0.0.1";
 
+    static {
+        FluidRegistry.enableUniversalBucket();
+    }
+
     @SidedProxy(clientSide = "com.rustik.metallurgy.proxy.ClientProxy", serverSide = "com.rustik.metallurgy.proxy.ServerProxy")
     public static CommonProxy proxy;
 

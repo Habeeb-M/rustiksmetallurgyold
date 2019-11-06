@@ -47,5 +47,6 @@ public class FluidMolten extends Fluid{
             });
         }
     }
+    FluidRegistry.addBucketForFluid(molten);
 }
 
