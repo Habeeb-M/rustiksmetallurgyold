@@ -8,6 +8,8 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
 
+import java.awt.*;
+
 public class ModFluid extends Fluid{
 
     protected static int mapColor = 0xFFFF0000;
@@ -16,21 +18,9 @@ public class ModFluid extends Fluid{
     protected static SoundEvent fillSound = SoundEvents.ITEM_BUCKET_FILL;
     protected static Material material = Material.WATER;
 
-    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing)
+    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing, Color color)
     {
         super(fluidName, still, flowing);
-    }
-
-    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing, int mapColor)
-    {
-        this(fluidName, still, flowing);
-        setColor(mapColor);
-    }
-
-    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing, int mapColor, float overlayAlpha)
-    {
-        this(fluidName, still, flowing, mapColor);
-        setAlpha(overlayAlpha);
     }
 
     @Override
@@ -103,6 +93,5 @@ public class ModFluid extends Fluid{
 
     static {
         FluidRegistry.enableUniversalBucket();
-        FluidRegistry.addBucketForFluid(FluidMolten.FluidMolten);
     }
 }
