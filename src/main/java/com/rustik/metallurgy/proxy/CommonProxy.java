@@ -4,6 +4,7 @@ import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
 //import com.rustik.metallurgy.MaterialSystem.MaterialOreCrushed;//
 import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
+import com.rustik.metallurgy.fluids.FluidInit;
 import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.fluids.FluidMolten;
 import com.rustik.metallurgy.metallurgy;
@@ -25,6 +26,7 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent e) {
         FluidMolten.registerFluids();
+        FluidInit.Init();
     }
 
     public static void init (FMLInitializationEvent event) {

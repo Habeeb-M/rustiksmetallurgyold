@@ -28,7 +28,6 @@ public class metallurgy {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event);
-        ModFluid.Init();
     }
 
     @Mod.EventHandler
