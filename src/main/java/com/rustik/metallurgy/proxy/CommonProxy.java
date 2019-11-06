@@ -22,7 +22,6 @@ import static com.rustik.metallurgy.MaterialSystem.MaterialIngot.ingots;
 @Mod.EventBusSubscriber
 public class CommonProxy {
 
-
     public void preInit(FMLPreInitializationEvent e) {
         FluidMolten.registerFluids();
     }

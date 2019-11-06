@@ -1,12 +1,11 @@
 package com.rustik.metallurgy.fluids;
 
-import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialLiquid;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
 
 public class ModFluid extends Fluid{
@@ -102,5 +101,8 @@ public class ModFluid extends Fluid{
         return block.getDefaultState().getMaterial() == getMaterial();
     }
 
-
+    static {
+        FluidRegistry.enableUniversalBucket();
+        FluidRegistry.addBucketForFluid(FluidMolten.FluidMolten);
+    }
 }

@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidMolten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/FluidMolten.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ServerProxy.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

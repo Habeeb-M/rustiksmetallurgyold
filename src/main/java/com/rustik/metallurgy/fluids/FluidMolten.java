@@ -12,12 +12,12 @@ import java.awt.*;
 public class FluidMolten extends Fluid{
 
     public FluidMolten(String fluidName, ResourceLocation still, ResourceLocation flowing, Color color) {
-        super(fluidName, still, flowing, color);
-    }
+        super(fluidName, still, flowing, color); }
 
     public static final Material FLUIDMOLTEN = new MaterialLiquid(
             MapColor.RED);
-    public static final ModFluid FluidMolten = (ModFluid) new ModFluid(
+
+    public static Fluid FluidMolten = (ModFluid) new ModFluid(
             "FluidMolten",
             new ResourceLocation(metallurgy.MODID,"fluid/fluidmolten_still"),
             new ResourceLocation(metallurgy.MODID, "fluid/fluidmolten_flow")
@@ -29,20 +29,12 @@ public class FluidMolten extends Fluid{
             .setViscosity(25000)
             .setTemperature(300);
 
-    public static FluidMolten fluidMolten;
-
-
-
     public static void registerFluids() {
-        fluidMolten = new FluidMolten(
+        FluidMolten = new FluidMolten(
                 "fluidMolten",
                 (new ResourceLocation("metallurgy", "fluids/fluidmolten_still")),
-        (new ResourceLocation("metallurgy", "fluids/fluids/fluidmolten/flow")),
+                (new ResourceLocation("metallurgy", "fluids/fluids/fluidmolten/flow")),
                 Color.RED);
     }
-
-
-
-
 }
 
