@@ -11,7 +11,7 @@ public class FluidMolten extends Fluid{
     static Fluid FluidMolten = new ModFluid(
             "fluidMolten",
             (new ResourceLocation("metallurgy", "fluids/fluidmolten_still")),
-            (new ResourceLocation("metallurgy", "fluids/fluids/fluidmolten/flow")))
+            (new ResourceLocation("metallurgy", "fluids/fluidmolten_flow")))
             .setDensity(1100)
             .setGaseous(false)
             .setLuminosity(9)
