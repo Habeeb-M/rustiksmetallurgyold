@@ -16,75 +16,36 @@ public class ModFluid extends Fluid{
     protected static Material material = Material.WATER;
 
     public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing)
-    {
-        super(fluidName, still, flowing);
-    }
-
-    @Override
-    public int getColor()
-    {
-        return mapColor;
-    }
+    { super(fluidName, still, flowing); }
 
     public ModFluid setColor(int parColor)
-    {
-        mapColor = parColor;
-        return this;
-    }
-
-    public float getAlpha()
-    {
-        return overlayAlpha;
-    }
+    { mapColor = parColor;
+        return this; }
 
     public ModFluid setAlpha(float parOverlayAlpha)
-    {
-        overlayAlpha = parOverlayAlpha;
-        return this;
-    }
+    { overlayAlpha = parOverlayAlpha;
+        return this; }
 
     @Override
     public ModFluid setEmptySound(SoundEvent parSound)
-    {
-        emptySound = parSound;
-        return this;
-    }
-
-    @Override
-    public SoundEvent getEmptySound()
-    {
-        return emptySound;
-    }
+    { emptySound = parSound;
+        return this; }
 
     @Override
     public ModFluid setFillSound(SoundEvent parSound)
-    {
-        fillSound = parSound;
-        return this;
-    }
-
-    @Override
-    public SoundEvent getFillSound()
-    {
-        return fillSound;
-    }
+    { fillSound = parSound;
+        return this; }
 
     public ModFluid setMaterial(Material parMaterial)
-    {
-        material = parMaterial;
-        return this;
-    }
+    { material = parMaterial;
+        return this; }
 
     public Material getMaterial()
-    {
-        return material;
-    }
+    { return material; }
 
     @Override
     public boolean doesVaporize(FluidStack fluidStack)
-    {
-        if (block == null)
+    { if (block == null)
             return false;
-        return block.getDefaultState().getMaterial() == getMaterial();
-    }
+        return block.getDefaultState().getMaterial() == getMaterial(); }
 }

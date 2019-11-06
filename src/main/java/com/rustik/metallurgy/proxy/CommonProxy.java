@@ -20,13 +20,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import static com.rustik.metallurgy.MaterialSystem.MaterialIngot.ingots;
+import static com.rustik.metallurgy.fluids.FluidMolten.fluidMolten;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-        ModFluids.registerFluids(FluidMolten, Material.LAVA);
+        ModFluids.registerFluids(fluidMolten, Material.LAVA);
         ModFluids.createFluid("MoltenFluid");
     }
 

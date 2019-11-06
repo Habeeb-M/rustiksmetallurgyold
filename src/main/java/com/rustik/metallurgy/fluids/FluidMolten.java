@@ -21,7 +21,7 @@ public class FluidMolten extends Fluid{
     public FluidMolten(String fluidName, ResourceLocation still, ResourceLocation flowing) {
         super(fluidName, still, flowing); }
 
-    public static Fluid FluidMolten = new ModFluid(
+    public static Fluid fluidMolten = new ModFluid(
             "fluidMolten",
             (new ResourceLocation("metallurgy", "fluids/fluidmolten_still")),
             (new ResourceLocation("metallurgy", "fluids/fluidmolten_flow")))
@@ -37,7 +37,7 @@ public class FluidMolten extends Fluid{
         @SubscribeEvent
         public static void registerBlockModels(ModelRegistryEvent event)
         {
-            ModelLoader.setCustomStateMapper(FluidMolten.getBlock(), new StateMapperBase()
+            ModelLoader.setCustomStateMapper(fluidMolten.getBlock(), new StateMapperBase()
             {
                 @Override
                 protected ModelResourceLocation getModelResourceLocation(IBlockState state)
