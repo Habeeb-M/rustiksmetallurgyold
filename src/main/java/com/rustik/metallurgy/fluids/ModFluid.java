@@ -1,51 +1,32 @@
 package com.rustik.metallurgy.fluids;
 
+import com.rustik.metallurgy.metallurgy;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.SoundEvents;
+import net.minecraft.block.material.MaterialLiquid;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvent;
+import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidRegistry;
 
-public class ModFluid extends Fluid{
+public class ModFluid {
 
-    protected static int mapColor = 0xFFFF0000;
-    protected static float overlayAlpha = 0.2F;
-    protected static SoundEvent emptySound = SoundEvents.ITEM_BUCKET_EMPTY;
-    protected static SoundEvent fillSound = SoundEvents.ITEM_BUCKET_FILL;
-    protected static Material material = Material.WATER;
+    private static ResourceLocation createLoc(String name) {
+        return new ResourceLocation(metallurgy.MODID,  ":" + "blocks/" + name);
+    }
 
-    public ModFluid(String fluidName, ResourceLocation still, ResourceLocation flowing)
-    { super(fluidName, still, flowing); }
+    public static Fluid addFluid(String fluidName, int density, int viscosity) {
+        Fluid fluid = new Fluid(fluidName, createLoc(fluidName.toLowerCase() + "_still"), createLoc(fluidName.toLowerCase() + "_flow"))
+                .setDensity(density)
+                .setViscosity(viscosity);
+        FluidRegistry.addBucketForFluid(fluid);
+        return fluid;
+    }
 
-    public ModFluid setColor(int parColor)
-    { mapColor = parColor;
-        return this; }
-
-    public ModFluid setAlpha(float parOverlayAlpha)
-    { overlayAlpha = parOverlayAlpha;
-        return this; }
-
-    @Override
-    public ModFluid setEmptySound(SoundEvent parSound)
-    { emptySound = parSound;
-        return this; }
-
-    @Override
-    public ModFluid setFillSound(SoundEvent parSound)
-    { fillSound = parSound;
-        return this; }
-
-    public ModFluid setMaterial(Material parMaterial)
-    { material = parMaterial;
-        return this; }
-
-    public Material getMaterial()
-    { return material; }
-
-    @Override
-    public boolean doesVaporize(FluidStack fluidStack)
-    { if (block == null)
-            return false;
-        return block.getDefaultState().getMaterial() == getMaterial(); }
+    public static Block addBlock(Fluid fluid, MapColor colour) {
+        return new BlockFluidClassic(fluid, new MaterialLiquid(colour))
+                .setRegistryName(fluid.getName())
+                .setTranslationKey(fluid.getName());
+    }
 }
