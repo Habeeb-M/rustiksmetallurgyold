@@ -1,6 +1,8 @@
 package com.rustik.metallurgy;
 
+import com.rustik.metallurgy.fluids.ModFluids;
 import com.rustik.metallurgy.proxy.CommonProxy;
+import net.minecraft.block.material.Material;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -8,6 +10,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
+
+import static com.rustik.metallurgy.fluids.FluidMolten.fluidMolten;
 
 @Mod(modid = metallurgy.MODID, name = metallurgy.MODNAME, version = metallurgy.MODVERSION, dependencies = "required-after:forge@[11.16.0.1865,)", useMetadata = true)
 public class metallurgy {

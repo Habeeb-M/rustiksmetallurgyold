@@ -31,7 +31,7 @@ public class FluidMolten extends Fluid{
             .setViscosity(25000)
             .setTemperature(300);
 
-    @Mod.EventBusSubscriber(modid = metallurgy.MODID, value = Side.CLIENT)
+    /*@Mod.EventBusSubscriber(modid = metallurgy.MODID, value = Side.CLIENT)
     private static class Client
     {
         @SubscribeEvent
@@ -46,7 +46,6 @@ public class FluidMolten extends Fluid{
                 }
             });
         }
-    }
-    FluidRegistry.addBucketForFluid(molten);
+    }*/
 }
 

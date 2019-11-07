@@ -13,6 +13,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -27,7 +28,7 @@ public class CommonProxy {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-        ModFluids.registerFluids(ModFluids.createFluid(fluidMolten), Material.LAVA);
+        ModFluids.registerFluids(fluidMolten, Material.LAVA);
     }
 
     public static void init (FMLInitializationEvent event) {
