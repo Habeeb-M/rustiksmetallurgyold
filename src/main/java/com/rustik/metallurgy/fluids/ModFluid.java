@@ -13,13 +13,14 @@ import net.minecraftforge.fluids.FluidRegistry;
 public class ModFluid {
 
     private static ResourceLocation createLoc(String name) {
-        return new ResourceLocation(metallurgy.MODID,  ":" + "blocks/" + name);
+        return new ResourceLocation(metallurgy.MODID,"blocks/" + name);
     }
 
     public static Fluid addFluid(String fluidName, int density, int viscosity) {
-        Fluid fluid = new Fluid(fluidName, createLoc(fluidName.toLowerCase() + "_still"), createLoc(fluidName.toLowerCase() + "_flow"))
+        Fluid fluid = new Fluid(fluidName, createLoc(fluidName + "_still"), createLoc(fluidName + "_flow"))
                 .setDensity(density)
                 .setViscosity(viscosity);
+        FluidRegistry.registerFluid(fluid);
         FluidRegistry.addBucketForFluid(fluid);
         return fluid;
     }
