@@ -26,7 +26,6 @@ public class CommonProxy {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-        ModFluid.addBlock(ModFluid.addFluid("fluidmolten", 500, 500), MapColor.RED);
     }
 
     public static void init (FMLInitializationEvent event) {
@@ -39,12 +38,21 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BlockOre ());
+        //FLUIDS
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavafelsic", 300, 3), MapColor.RED));
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavaintermediate", 250, 8), MapColor.RED));
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavamafic", 200, 13), MapColor.RED));
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavaultramafic", 100, 20), MapColor.RED));
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavacarbonatitic", 200, 8), MapColor.RED));
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavasulfuric", 75, 18), MapColor.RED));
+        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavaolivinitic", 200, 10), MapColor.RED));
+
     }
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemIngot ());
         event.getRegistry().register(new ItemBlock(ModBlocks.blockOre).setRegistryName(ModBlocks.blockOre.getRegistryName()));
-
+        //AUTO-ITEMS
         for(int ingotamount = 0; ingotamount < 82; ingotamount++) { Item ingot = new MaterialIngot (ingotamount).setRegistryName("materialingot" + ingotamount).setTranslationKey( metallurgy.MODID + ".materialingot" + ingotamount);ingots.add(ingot);event.getRegistry().register(ingot);}
         //for(int orecrushedamount = 0; orecrushedamount < 100; orecrushedamount++) {Item orecrushed = new MaterialOreCrushed(orecrushedamount).setRegistryName("materialorecrushed" + orecrushedamount).setTranslationKey(metallurgy.MODID + ".materialorecrushed" + orecrushedamount);MaterialOreCrushed.orecrushed.add(orecrushed);event.getRegistry().register(orecrushed);}
     }

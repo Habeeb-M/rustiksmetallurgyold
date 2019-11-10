@@ -10,7 +10,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-
 @Mod(modid = metallurgy.MODID, name = metallurgy.MODNAME, version = metallurgy.MODVERSION, dependencies = "required-after:forge@[11.16.0.1865,)", useMetadata = true)
 public class metallurgy {
 

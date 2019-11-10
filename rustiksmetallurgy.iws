@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b6d1f2d-3d06-4535-977c-8fd2093feaec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavacarbonatitic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavaintermediate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavamafic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavaolivinitic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavasulfuric.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavaultramafic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/lavaintermediate_flow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/lavaintermediate_flow.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/lavaintermediate_still.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/fluids/lavaintermediate_still.png.mcmeta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rustiksmetallurgy.iws" beforeDir="false" afterPath="$PROJECT_DIR$/rustiksmetallurgy.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialIngot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialIngot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/blocks/ModBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_flow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_flow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_still.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_still.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_still.png.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_still.png.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/metallurgy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/fluidmolten.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/blockstates/lavafelsic.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_flow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_flow.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_still.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/metallurgy/textures/blocks/fluidmolten_still.png.mcmeta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,12 +113,13 @@
     <property name="show.unlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\habee\Desktop\mod\rustiksmetallurgy\src\main\resources\assets\metallurgy\textures\blocks" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\habee\Desktop\mod\rustiksmetallurgy\src\main\resources\assets\metallurgy\textures\items" />
       <recent name="C:\Users\habee\OneDrive\Desktop\mod\rustiksmetallurgy\src\main\resources\assets\metallurgy\models\item" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\habee\Desktop\mod\rustiksmetallurgy\src\main\resources\assets\metallurgy\textures\fluids" />
+      <recent name="C:\Users\habee\Desktop\mod\rustiksmetallurgy\src\main\resources\assets\metallurgy\textures\blocks" />
     </key>
   </component>
   <component name="RunDashboard">

@@ -30,7 +30,6 @@ public class MaterialIngot extends Item {
         setCustomModelResourceLocation ( this , 0 , new ModelResourceLocation ( "metallurgy:materialingot" , "inventory" ) );
     }
 
-
     @GameRegistry.ObjectHolder("metallurgy:materialingot")
     public static MaterialIngot materialIngot;
 

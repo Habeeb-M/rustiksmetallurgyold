@@ -4,9 +4,9 @@
     "model": "forge:fluid"
   },
   "variants": {
-    "normal": [{
+    "fluid": [{
       "custom": {
-        "fluid": "fluidmolten"
+        "fluid": "lavafelsic"
       }
     }]
   }
