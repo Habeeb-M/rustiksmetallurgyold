@@ -1,7 +1,6 @@
 package com.rustik.metallurgy;
 
 import com.rustik.metallurgy.proxy.CommonProxy;
-import net.minecraft.block.material.Material;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;

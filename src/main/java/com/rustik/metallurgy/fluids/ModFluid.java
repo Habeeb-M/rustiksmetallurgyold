@@ -15,10 +15,12 @@ public class ModFluid {
         return new ResourceLocation(metallurgy.MODID,"fluids/" + name);
     }
 
-    public static Fluid addFluid(String fluidName, int density, int viscosity) {
+    public static Fluid addFluid(String fluidName, int density, int viscosity, int luminosity, int temperature) {
         Fluid fluid = new Fluid(fluidName, createLoc(fluidName + "_still"), createLoc(fluidName + "_flow"))
                 .setDensity(density)
-                .setViscosity(viscosity);
+                .setViscosity(viscosity)
+                .setLuminosity(luminosity)
+                .setTemperature(temperature);
         FluidRegistry.registerFluid(fluid);
         FluidRegistry.addBucketForFluid(fluid);
         return fluid;

@@ -1,6 +1,7 @@
 tile.metallurgy.BlockOre.name=OreBlock
 item.metallurgy.itemIngot.name=Ingot
 
+#MATERIAL INGOTS
 item.metallurgy.materialingot0.name=Actinium Ingot
 item.metallurgy.materialingot1.name=Aluminum Ingot
 item.metallurgy.materialingot2.name=Americium Ingot
@@ -83,3 +84,5 @@ item.metallurgy.materialingot78.name=Ytterbium Ingot
 item.metallurgy.materialingot79.name=Yttrium Ingot
 item.metallurgy.materialingot80.name=Zinc Ingot
 item.metallurgy.materialingot81.name=Zirconium Ingot
+
+#MATERIAL ORES

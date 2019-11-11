@@ -18,7 +18,6 @@ import static net.minecraftforge.client.model.ModelLoader.setCustomModelResource
 public class MaterialIngot extends Item {
 
     public static Set<Item> ingots = new HashSet<> ();
-
     public int ingotamount = 0;
 
     public MaterialIngot (int ingotamount) {
