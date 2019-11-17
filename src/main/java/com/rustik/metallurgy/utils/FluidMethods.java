@@ -1,4 +1,4 @@
-package com.rustik.metallurgy.fluids;
+package com.rustik.metallurgy.utils;
 
 import com.rustik.metallurgy.metallurgy;
 import net.minecraft.block.Block;
@@ -9,7 +9,7 @@ import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
-public class ModFluid {
+public class FluidMethods {
 
     private static ResourceLocation createLoc(String name) {
         return new ResourceLocation(metallurgy.MODID,"fluids/" + name);

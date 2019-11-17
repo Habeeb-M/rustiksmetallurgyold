@@ -6,7 +6,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -16,11 +15,11 @@ import java.util.Set;
 public class MaterialOre extends Block{
 
     public static Set<Block> ores = new HashSet<> ();
-    public int oreamount = 0;
+    public int oreAmount = 0;
 
-    public MaterialOre(Material blockMaterialIn, MapColor blockMapColorIn, int oreamount) {
+    public MaterialOre(Material blockMaterialIn, MapColor blockMapColorIn, int oreAmount) {
         super(blockMaterialIn, blockMapColorIn);
-        this.oreamount = oreamount;
+        this.oreAmount = oreAmount;
     }
 
     @SideOnly(Side.CLIENT)
@@ -28,6 +27,5 @@ public class MaterialOre extends Block{
         ModelLoader.setCustomModelResourceLocation( Item.getItemFromBlock(this), 0, new ModelResourceLocation (getRegistryName(), "inventory"));
     }
 
-    @GameRegistry.ObjectHolder("metallurgy:materialore")
-    public static MaterialOre materialOre;
+
 }

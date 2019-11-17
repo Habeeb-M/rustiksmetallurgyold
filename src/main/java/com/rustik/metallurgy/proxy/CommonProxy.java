@@ -2,11 +2,11 @@ package com.rustik.metallurgy.proxy;
 
 import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
 import com.rustik.metallurgy.MaterialSystem.MaterialOre;
-import com.rustik.metallurgy.blocks.ModBlocks;
 import com.rustik.metallurgy.blocks.BlockOre;
-import com.rustik.metallurgy.fluids.ModFluid;
+import com.rustik.metallurgy.utils.FluidMethods;
 import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.metallurgy;
+import com.rustik.metallurgy.utils.MetallurgyObjects;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -38,22 +38,26 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BlockOre ());
         //FLUIDS
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavafelsic", 300, 3500, 9, 750), MapColor.RED));
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavaintermediate", 250, 2500, 11, 850), MapColor.RED));
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavamafic", 200, 2000, 13, 1000), MapColor.RED));
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavaultramafic", 100, 1000, 15, 1600), MapColor.RED));
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavacarbonatitic", 200, 3500, 8, 550), MapColor.RED));
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavasulfuric", 75, 1200, 13, 150), MapColor.RED));
-        event.getRegistry().register(ModFluid.addBlock(ModFluid.addFluid("lavaolivinitic", 200, 2000, 12, 1000), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavafelsic", 300, 3500, 9, 750), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavaintermediate", 250, 2500, 11, 850), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavamafic", 200, 2000, 13, 1000), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavaultramafic", 100, 1000, 15, 1600), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavacarbonatitic", 200, 3500, 8, 550), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavasulfuric", 75, 1200, 13, 150), MapColor.RED));
+        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavaolivinitic", 200, 2000, 12, 1000), MapColor.RED));
         //AUTO-BLOCKS
-        for(int oreamount = 0; oreamount < 100; oreamount++) {Block ore = new MaterialOre(Material.ROCK, MapColor.GRAY, oreamount).setRegistryName("materialore" + oreamount).setTranslationKey(metallurgy.MODID + ".materialingot" + oreamount); ores.add(ore); event.getRegistry().register(ore);}
+        for(int oreAmount = 0; oreAmount < 100; oreAmount++) {
+            Block ore = new MaterialOre(Material.ROCK, MapColor.GRAY, oreAmount)
+                    .setRegistryName("materialore" + oreAmount)
+                    .setTranslationKey(metallurgy.MODID + ".materialingot" + oreAmount);
+            ores.add(ore); event.getRegistry().register(ore);}
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemIngot ());
-        event.getRegistry().register(new ItemBlock(ModBlocks.blockOre).setRegistryName(ModBlocks.blockOre.getRegistryName()));
+        event.getRegistry().register(new ItemBlock(MetallurgyObjects.blockOre).setRegistryName(MetallurgyObjects.blockOre.getRegistryName()));
         //AUTO-ITEMS
-        for(int ingotamount = 0; ingotamount < 82; ingotamount++) { Item ingot = new MaterialIngot (ingotamount).setRegistryName("materialingot" + ingotamount).setTranslationKey( metallurgy.MODID + ".materialingot" + ingotamount); ingots.add(ingot); event.getRegistry().register(ingot);}
+        for(int ingotAmount = 0; ingotAmount < 82; ingotAmount++) { Item ingot = new MaterialIngot (ingotAmount).setRegistryName("materialingot" + ingotAmount).setTranslationKey( metallurgy.MODID + ".materialingot" + ingotAmount); ingots.add(ingot); event.getRegistry().register(ingot);}
     }
 }

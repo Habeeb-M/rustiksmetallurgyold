@@ -18,10 +18,10 @@ import static net.minecraftforge.client.model.ModelLoader.setCustomModelResource
 public class MaterialIngot extends Item {
 
     public static Set<Item> ingots = new HashSet<> ();
-    public int ingotamount = 0;
+    public int ingotAmount = 0;
 
-    public MaterialIngot (int ingotamount) {
-        this.ingotamount = ingotamount;
+    public MaterialIngot (int ingotAmount) {
+        this.ingotAmount = ingotAmount;
     }
 
     @SideOnly(Side.CLIENT)
@@ -39,7 +39,7 @@ public class MaterialIngot extends Item {
                     @Override
                     public int colorMultiplier (ItemStack stack , int tintIndex) {
                         if ( stack != ItemStack.EMPTY ) {
-                            switch (((MaterialIngot)stack.getItem()).ingotamount) {
+                            switch (((MaterialIngot)stack.getItem()).ingotAmount) {
                                 case 0:	return  0xcafbf6;
                                 case 1:	return  0xf4f4f4;
                                 case 2:	return  0xf5f7c5;

@@ -1,15 +1,21 @@
-package com.rustik.metallurgy.blocks;
+package com.rustik.metallurgy.utils;
 
+import com.rustik.metallurgy.MaterialSystem.MaterialOre;
+import com.rustik.metallurgy.blocks.BlockOre;
 import net.minecraft.item.Item;
 import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ModBlocks {
+public class MetallurgyObjects {
     //BLOCKS
     @GameRegistry.ObjectHolder("metallurgy:blockore")
     public static final BlockOre blockOre = null;
     @GameRegistry.ObjectHolder("metallurgy:blockore")
     public static final Item itemBlockOre = null;
+    @GameRegistry.ObjectHolder("metallurgy:materialore")
+    public static MaterialOre materialOre;
+    @GameRegistry.ObjectHolder("metallurgy:materialore")
+    public static Item itemMaterialOre;
     //FLUIDS
     @GameRegistry.ObjectHolder("metallurgy:lavafelsic")
     public static final BlockFluidClassic lavafelsic = null;
