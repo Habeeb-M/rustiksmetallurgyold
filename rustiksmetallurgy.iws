@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b6d1f2d-3d06-4535-977c-8fd2093feaec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/rustiksmetallurgy.iws" beforeDir="false" afterPath="$PROJECT_DIR$/rustiksmetallurgy.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialIngot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialIngot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialOre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/MaterialSystem/MaterialOre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/utils/MetallurgyObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/fluids/ModFluid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/utils/FluidMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/ClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/proxy/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/utils/FluidMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rustik/metallurgy/utils/MetallurgyFluids.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

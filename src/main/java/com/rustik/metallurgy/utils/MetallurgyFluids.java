@@ -9,7 +9,7 @@ import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
-public class FluidMethods {
+public class MetallurgyFluids {
 
     private static ResourceLocation createLoc(String name) {
         return new ResourceLocation(metallurgy.MODID,"fluids/" + name);

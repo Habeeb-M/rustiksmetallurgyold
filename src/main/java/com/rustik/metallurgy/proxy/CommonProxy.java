@@ -3,7 +3,7 @@ package com.rustik.metallurgy.proxy;
 import com.rustik.metallurgy.MaterialSystem.MaterialIngot;
 import com.rustik.metallurgy.MaterialSystem.MaterialOre;
 import com.rustik.metallurgy.blocks.BlockOre;
-import com.rustik.metallurgy.utils.FluidMethods;
+import com.rustik.metallurgy.utils.MetallurgyFluids;
 import com.rustik.metallurgy.items.ItemIngot;
 import com.rustik.metallurgy.metallurgy;
 import com.rustik.metallurgy.utils.MetallurgyObjects;
@@ -38,18 +38,18 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BlockOre ());
         //FLUIDS
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavafelsic", 300, 3500, 9, 750), MapColor.RED));
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavaintermediate", 250, 2500, 11, 850), MapColor.RED));
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavamafic", 200, 2000, 13, 1000), MapColor.RED));
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavaultramafic", 100, 1000, 15, 1600), MapColor.RED));
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavacarbonatitic", 200, 3500, 8, 550), MapColor.RED));
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavasulfuric", 75, 1200, 13, 150), MapColor.RED));
-        event.getRegistry().register(FluidMethods.addBlock(FluidMethods.addFluid("lavaolivinitic", 200, 2000, 12, 1000), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavafelsic", 300, 3500, 9, 750), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavaintermediate", 250, 2500, 11, 850), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavamafic", 200, 2000, 13, 1000), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavaultramafic", 100, 1000, 15, 1600), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavacarbonatitic", 200, 3500, 8, 550), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavasulfuric", 75, 1200, 13, 150), MapColor.RED));
+        event.getRegistry().register(MetallurgyFluids.addBlock(MetallurgyFluids.addFluid("lavaolivinitic", 200, 2000, 12, 1000), MapColor.RED));
         //AUTO-BLOCKS
         for(int oreAmount = 0; oreAmount < 100; oreAmount++) {
             Block ore = new MaterialOre(Material.ROCK, MapColor.GRAY, oreAmount)
                     .setRegistryName("materialore" + oreAmount)
-                    .setTranslationKey(metallurgy.MODID + ".materialingot" + oreAmount);
+                    .setTranslationKey(metallurgy.MODID + ".materialore" + oreAmount);
             ores.add(ore); event.getRegistry().register(ore);}
     }
 

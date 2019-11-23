@@ -12,6 +12,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import java.util.HashSet;
 import java.util.Set;
 
+import static com.rustik.metallurgy.utils.MetallurgyObjects.materialOre;
+
 public class MaterialOre extends Block{
 
     public static Set<Block> ores = new HashSet<> ();
@@ -24,7 +26,7 @@ public class MaterialOre extends Block{
 
     @SideOnly(Side.CLIENT)
     public void initModel() {
-        ModelLoader.setCustomModelResourceLocation( Item.getItemFromBlock(this), 0, new ModelResourceLocation (getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation( Item.getItemFromBlock(materialOre), 0, new ModelResourceLocation (getRegistryName(), "inventory"));
     }
 
 
