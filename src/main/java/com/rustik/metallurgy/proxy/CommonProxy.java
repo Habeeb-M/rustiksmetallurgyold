@@ -10,8 +10,10 @@ import com.rustik.metallurgy.utils.MetallurgyObjects;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -56,8 +58,9 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemIngot ());
-        event.getRegistry().register(new ItemBlock(MetallurgyObjects.blockOre).setRegistryName(MetallurgyObjects.blockOre.getRegistryName()));
         //AUTO-ITEMS
         for(int ingotAmount = 0; ingotAmount < 82; ingotAmount++) { Item ingot = new MaterialIngot (ingotAmount).setRegistryName("materialingot" + ingotAmount).setTranslationKey( metallurgy.MODID + ".materialingot" + ingotAmount); ingots.add(ingot); event.getRegistry().register(ingot);}
+        //AUTO-ITEMBLOCKS
+        (MaterialOre.ores).stream().forEach((block) -> event.getRegistry().register(new ItemBlock(block).setRegistryName(block.getRegistryName())));
     }
 }

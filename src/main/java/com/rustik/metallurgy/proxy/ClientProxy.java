@@ -2,7 +2,6 @@ package com.rustik.metallurgy.proxy;
 
 import com.rustik.metallurgy.MaterialSystem.MaterialOre;
 import com.rustik.metallurgy.items.ModItems;
-import com.rustik.metallurgy.utils.MetallurgyObjects;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.block.statemap.StateMapperBase;
@@ -26,7 +25,6 @@ public class ClientProxy extends CommonProxy {
     @SubscribeEvent
     public static void registerModels (ModelRegistryEvent event) {
         ModItems.initModels ();
-        ModelLoader.setCustomModelResourceLocation ( Item.getItemFromBlock ( MetallurgyObjects.blockOre ) , 0 , new ModelResourceLocation ( MetallurgyObjects.itemBlockOre.getRegistryName () , "inventory" ) );
 
         (MaterialOre.ores).stream().forEach((block) ->
             ModelLoader.setCustomModelResourceLocation((Item.getItemFromBlock(block)), 0 , new ModelResourceLocation((block.getRegistryName ()).toString(), "inventory" )));

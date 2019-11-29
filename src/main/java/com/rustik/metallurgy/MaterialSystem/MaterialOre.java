@@ -28,6 +28,4 @@ public class MaterialOre extends Block{
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation( Item.getItemFromBlock(materialOre), 0, new ModelResourceLocation (getRegistryName(), "inventory"));
     }
-
-
 }

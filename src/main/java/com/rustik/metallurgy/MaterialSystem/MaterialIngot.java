@@ -32,7 +32,7 @@ public class MaterialIngot extends Item {
     @GameRegistry.ObjectHolder("metallurgy:materialingot")
     public static MaterialIngot materialIngot;
 
-    public static void registerColors ( ) {
+    public static void registerColors () {
         ItemColors ic = Minecraft.getMinecraft ().getItemColors ();
         ic.registerItemColorHandler (
                 new IItemColor() {
